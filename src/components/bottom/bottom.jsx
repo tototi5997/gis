@@ -7,6 +7,8 @@ const Bottom = () => {
 
     // 测试点击事件
     const handleClick = () => {
+        // dosomething
+        // 广播
         globalEvent.fire('MBottom.Test', {data: 'bottom is ready !'})
     }
     return (

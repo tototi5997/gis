@@ -7,6 +7,7 @@ import globalEvent from '../../utils/global-event'
 
 const Home = () => {
     useEffect(() => {
+        // 接受监控的广播信息
         globalEvent.on('MBottom.Test', ({data}) => {
             console.log('event data', data)
         })
