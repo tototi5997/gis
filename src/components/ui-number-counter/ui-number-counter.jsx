@@ -14,7 +14,6 @@ const UiNumberCounter = ({number = 100}) => {
       easing: 'easeInOutExpo',
       round: 1 // Will round the animated value to 1 decimal
     })
-    console.log(anime.easings, 'easings列表')
   }, [number])
   return (
     <div ref={numberRef} style={{width: 100, height: 50}} />
