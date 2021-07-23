@@ -156,6 +156,7 @@
     ]
   },
   "devDependencies": {
-    "svg-sprite-loader": "^6.0.9"
+    "svg-sprite-loader": "^6.0.9",
+    "svgo-loader": "2.2.1"
   }
 }
