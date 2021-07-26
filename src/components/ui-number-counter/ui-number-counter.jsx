@@ -12,7 +12,7 @@ const UiNumberCounter = ({number = 100}) => {
       duration: 3000,
       innerHTML: [0, number],
       easing: 'easeInOutExpo',
-      round: 1 // Will round the animated value to 1 decimal
+      round: 1, // Will round the animated value to 1 decimal
     })
   }, [number])
   return (
