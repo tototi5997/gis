@@ -5,6 +5,6 @@ import './styles/common.styl'
 import './icons'
 
 ReactDOM.render(
-    <App />,
+  <App />,
   document.getElementById('root')
 )
