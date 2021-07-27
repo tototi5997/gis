@@ -7,11 +7,11 @@ const DragBox = () => {
   // 是否拖动
   let [isDrag, setDrag] = useState(false)
   // 起始量
-  const [orginX, setOx] = useState(0)
-  const [orignY, setOy] = useState(0)
-  // 偏移量
-  let [offsetX, setX] = useState(0) 
-  let [offsetY, setY] = useState(0)
+  let [orginX, setOx] = useState(0)
+  let [orignY, setOy] = useState(0)
+  // 盒子当前的位置
+  let [cx, setX] = useState(0) 
+  let [cy, setY] = useState(0)
 
   useEffect(() => {
     
@@ -20,20 +20,21 @@ const DragBox = () => {
   const dragFun = () => {
     window.onmousemove = e => {
       if (e && isDrag) {
+        // 移动中计算当前位置鼠标与起始位置的偏移量
         const x = e.clientX - orginX
         const y = e.clientY - orignY
-
-        setX(e.clientX)
-        setY(e.clientY)
+        console.log('鼠标偏移', [x, y])
+        setX(cx + x)
+        setY(cy + y)
       }
     }
   }
   const handleDown = value => {
     setDrag(isDrag = true)
     isDrag && console.log('点击了鼠标')
-    // console.log(isDrag)
-    setOx(value.clientX)
-    setOy(value.clientY)
+    // 保存每次鼠标按下的起始坐标
+    setOx(orginX = value.clientX)
+    setOy(orignY = value.clientY)
     document.addEventListener('mousemove', dragFun())
     document.addEventListener('mouseup', () => {
       document.removeEventListener('mousemove', dragFun())
@@ -49,7 +50,7 @@ const DragBox = () => {
   }
 
   return (
-    <div className={c('pa', s.warp)} style={{top: offsetY, left: offsetX}}>
+    <div className={c('pa', s.warp)} style={{top: cy, left: cx}}>
 
       <div className={c(s.drag)} onMouseDown={e => {handleDown(e)}} onMouseUp={() => {handleUp()}}>拖动区域</div>
 
