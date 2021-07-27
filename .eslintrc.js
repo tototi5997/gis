@@ -12,27 +12,6 @@ module.exports = {
     "ecmaFeatures": {
       "jsx": true,
     },
-<<<<<<< HEAD
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 6,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "react/prop-types": 0,
-        "no-unused-vars":["off"],
-    }
-};
-=======
     "ecmaVersion": 6,
     "sourceType": "module",
   },
@@ -239,4 +218,3 @@ module.exports = {
     "__PRO__": false,
   },
 }
->>>>>>> c7d71a7163a4256237e967c435193e56e0875394
