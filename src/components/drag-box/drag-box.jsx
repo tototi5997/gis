@@ -46,9 +46,9 @@ const DragBox = ({children}) => {
   }
 
   return (
-    <div className={c('pa', s.warp)} style={{top: cy, left: cx}}>
+    <div className={c('pa')} style={{top: cy, left: cx}}>
 
-      <div className={c(s.drag)} onMouseDown={e => {handleDown(e)}} onMouseUp={() => {handleUp()}}>
+      <div onMouseDown={e => {handleDown(e)}} onMouseUp={() => {handleUp()}}>
         {children}
       </div>
     </div>

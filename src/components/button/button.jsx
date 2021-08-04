@@ -25,19 +25,19 @@ const disable = ['cancel']
 
 const Button = ({btnConfig = btnCon, offset = 10, btnStyle = btnStyl, disableList = disable, handleClick = () => {}}) => {
   return (
-    <div className={c('fbh usn')}>
+    <div className={c('fbh usn')} style={{width: btnStyle.width, height: btnStyl.height}}>
       {
         btnConfig.map((item, index) => 
           Children.toArray(
             <div 
-              className={c(s.button, 'fbh fbac fbjc hand', {
+              className={c(s.button, 'fbh fbac fbjc hand p4', {
                 [s.disable]: disableList.findIndex(i => item.key === i) !== -1,
               })} 
               style={{
                 marginRight: index !== btnConfig.length - 1 && offset,
                 ...btnStyle,
               }}
-              onClick={() => { handleClick() }}
+              onClick={() => { handleClick(item.key) }}
             >
               {
                 item.iconName && <div className={c('fbh fbac fbjc mr8')}><Icon fill={btnStyle?.color} name={item.iconName}/></div>
