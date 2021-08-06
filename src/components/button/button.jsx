@@ -11,7 +11,7 @@ const btnCon = [
   {label: '取消', key: 'cancel'},
 ]
 // 按钮样式文件示例
-const btnStyl = {
+const btnStyl = { 
   width: 150,
   height: 40,
   border: '1px solid red',
