@@ -11,7 +11,7 @@ const MRoot = types.model('MRoot', {
 })
   .actions(self => {
     const afterCreate = () => {
-      console.log(self.state, '测试状态')
+      
     }
     return {
       afterCreate,

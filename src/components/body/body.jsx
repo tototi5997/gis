@@ -5,6 +5,7 @@ import DragBox from '../drag-box'
 import Button from '../button'
 import Icon from '../icon'
 import PreviewCase from '../preview-case/preview-case'
+import FunBox from '../fun-box/fun-box'
 
 const Body = () => {
   return (
@@ -20,6 +21,8 @@ const Body = () => {
           <Button />
         </div>
       </DragBox>
+
+      <FunBox />
     </div>
   )
 }
