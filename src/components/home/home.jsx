@@ -9,16 +9,16 @@ import Bottom from '../bottom'
 const Home = () => {
 
   return (
-    <div className={c('wh100p fbv', s.body)}>
+    <div className={c('wh100p fbv pr', s.body)}>
       <div>
         <Head />
       </div>
 
-      <div className={c('fbh')}>
+      <div className={c('fbh wh100p')}>
         <Body />
       </div>
 
-      <div>
+      <div className={c(s.bottom)}>
         <Bottom />
       </div>
     </div>
