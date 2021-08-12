@@ -1,28 +1,27 @@
-import React from 'react'
+import React, {Children} from 'react'
 import c from 'classnames'
 import s from './body.module.styl'
-import DragBox from '../drag-box'
-import Button from '../button'
+import r from '../../models'
 import Icon from '../icon'
-import PreviewCase from '../preview-case/preview-case'
-import FunBox from '../fun-box/fun-box'
 
+const {leftMenu} = r.body
 const Body = () => {
   return (
-    <div className={c(s.body, 'w100p')}>
-      <DragBox>
-        <div className={c('pa l100 t100')}>
-          <PreviewCase />
-        </div>
-      </DragBox>
-
-      <DragBox>
-        <div className={c('pa l100 t400')}>
-          <Button />
-        </div>
-      </DragBox>
-
-      <FunBox />
+    <div className={c(s.body, 'wh100p fbh')}>
+      <div className={c(s.bodyLeft, 'h100p fbv')}>
+        {
+          leftMenu.iconBtnConfig.map(item => Children.toArray(
+            <LeftIconButton iconName={item.iconName}/>
+          ))
+        }
+      </div>
+    </div>
+  )
+}
+const LeftIconButton = ({isActive, iconName}) => {
+  return (
+    <div className={c('mt10 w100p fbh fbac fbjc h50')}>
+      <Icon name={iconName} size={30}/>
     </div>
   )
 }
