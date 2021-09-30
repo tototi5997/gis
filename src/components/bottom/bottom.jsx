@@ -11,6 +11,6 @@ const Bottom = () => {
 
       </div>
     </div>
-  )
+  )  
 }
 export default Bottom
