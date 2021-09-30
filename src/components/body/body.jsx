@@ -3,6 +3,7 @@ import c from 'classnames'
 import s from './body.module.styl'
 import r from '../../models'
 import Icon from '../icon'
+import Fun from '../fun'
 
 const {leftMenu} = r.body
 const Body = () => {
@@ -15,12 +16,15 @@ const Body = () => {
           ))
         }
       </div>
+      <div className={c('w100p', s.curtain)}>
+        <Fun/>
+      </div>
     </div>
   )
 }
 const LeftIconButton = ({isActive, iconName}) => {
   return (
-    <div className={c('mt10 w100p fbh fbac fbjc h50')}>
+    <div className={c('mt10 w100p fbh fbac fbjc h50', s.iconbtn)}>
       <Icon name={iconName} size={30}/>
     </div>
   )

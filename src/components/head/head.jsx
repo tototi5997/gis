@@ -17,13 +17,12 @@ const Head = () => {
         </div>
         <div className={c('ml10 bold')}>{head.owner}的测试空间</div>
         <div className={c('fbh fbjc fbac h100p mr10', s.headRight)}>
-          <div className={c('mr10')}><Icon name="happy-emoji" size={25}/></div>
+          <div className={c('mr10')}><Icon name="clock" size={25}/></div>
           <Timer />
         </div>
       </div>
-     
     </div>
-  ) 
+  )
 }
 
 export default observer(Head)

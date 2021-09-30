@@ -1,0 +1,44 @@
+.animationWrapper
+  width: 100%
+  max-width: 910px
+  margin-left: 32px
+  margin-right: 32px
+
+.easingVisualizer
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 910px;
+  height: 455px;
+  margin: -227px 0 0 -455px;
+
+.easingVisualizer .wrapper
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+.barsWrapper,
+.dotsWrapper
+  transform: translateZ(0)
+
+.easingVisualizer .bar
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-image: linear-gradient(180deg, #373734 0%, #242423 52%, #0D0D0C 100%);
+  transform-origin: 50% 50%;
+
+.easingVisualizer .dot
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  background-color: currentColor;
+  border-radius: 50%;

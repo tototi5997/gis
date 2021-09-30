@@ -4,14 +4,14 @@ import s from './button.module.styl'
 import Icon from '../icon'
 // import inArray from '../../utils/in-array'
 
-// config 
+// config
 // 文本信息，key，是否启用，icon支持
 const btnCon = [
   {label: '确认', key: 'confirm', iconName: 'user'},
   {label: '取消', key: 'cancel'},
 ]
 // 按钮样式文件示例
-const btnStyl = { 
+const btnStyl = {
   width: 150,
   height: 40,
   border: '1px solid red',
@@ -27,12 +27,12 @@ const Button = ({btnConfig = btnCon, offset = 10, btnStyle = btnStyl, disableLis
   return (
     <div className={c('fbh usn')} style={{width: btnStyle.width, height: btnStyl.height}}>
       {
-        btnConfig.map((item, index) => 
+        btnConfig.map((item, index) =>
           Children.toArray(
-            <div 
+            <div
               className={c(s.button, 'fbh fbac fbjc hand p4', {
                 [s.disable]: disableList.findIndex(i => item.key === i) !== -1,
-              })} 
+              })}
               style={{
                 marginRight: index !== btnConfig.length - 1 && offset,
                 ...btnStyle,
