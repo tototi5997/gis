@@ -6,7 +6,7 @@ import c from 'classnames'
 
 const Fun = () => {
 
-  const fitElementToParent = (el, padding) => {
+  const fitElementToParent = (el, padding) => {   
     let timeout = null
     const resize = () => {
       if (timeout) clearTimeout(timeout)
