@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/gis/static/css/main.0164722d.chunk.css",
-    "main.js": "/gis/static/js/main.013793da.chunk.js",
-    "main.js.map": "/gis/static/js/main.013793da.chunk.js.map",
-    "runtime-main.js": "/gis/static/js/runtime-main.0267138e.js",
-    "runtime-main.js.map": "/gis/static/js/runtime-main.0267138e.js.map",
-    "static/js/2.235769a4.chunk.js": "/gis/static/js/2.235769a4.chunk.js",
-    "static/js/2.235769a4.chunk.js.map": "/gis/static/js/2.235769a4.chunk.js.map",
-    "index.html": "/gis/index.html",
-    "static/css/main.0164722d.chunk.css.map": "/gis/static/css/main.0164722d.chunk.css.map",
-    "static/js/2.235769a4.chunk.js.LICENSE.txt": "/gis/static/js/2.235769a4.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.0164722d.chunk.css",
+    "main.js": "./static/js/main.013793da.chunk.js",
+    "main.js.map": "./static/js/main.013793da.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.7551195b.js",
+    "runtime-main.js.map": "./static/js/runtime-main.7551195b.js.map",
+    "static/js/2.d7b061b1.chunk.js": "./static/js/2.d7b061b1.chunk.js",
+    "static/js/2.d7b061b1.chunk.js.map": "./static/js/2.d7b061b1.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.0164722d.chunk.css.map": "./static/css/main.0164722d.chunk.css.map",
+    "static/js/2.d7b061b1.chunk.js.LICENSE.txt": "./static/js/2.d7b061b1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0267138e.js",
-    "static/js/2.235769a4.chunk.js",
+    "static/js/runtime-main.7551195b.js",
+    "static/js/2.d7b061b1.chunk.js",
     "static/css/main.0164722d.chunk.css",
     "static/js/main.013793da.chunk.js"
   ]
